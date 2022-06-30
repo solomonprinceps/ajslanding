@@ -1,0 +1,105 @@
+/* Override form input */
+.form-control {
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  min-height: 40px;
+  &.is-valid {
+    background: none;
+  }
+  &.is-invalid {
+    background: none;
+  }
+
+  input {
+    color: $black;
+  }
+}
+@media (max-width: 600px) {
+  .container-fluid {
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+  }
+}
+
+@media (min-width: 600px) {
+  .container-fluid {
+    padding-left: 60px!important;
+    padding-right: 60px!important;
+  }
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.g-0 {
+  padding: 0;
+}
+
+.d-block {
+  text-align: left;
+}
+
+.btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  &-login {
+    height: 40px;
+    display: block;
+  }
+  &.bold {
+    font-weight: bold;
+  }
+  &.shadow {
+    box-shadow: 0 2px 4 0 #587d71 20%;
+  }
+  &-sm {
+    height: 30px!important;
+    width: max-content;
+  }
+}
+
+.namecolor {
+  color: $primary;
+}
+
+.invalid-feedback {
+  // position: absolute; 
+  width: max-content;
+}
+
+.form-group {
+  margin-bottom: 22px;
+  color: $primary
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: max-content;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #cbcdce99;
+  .nav-link {
+    background-color: inherit!important;
+    border: 0 !important;
+    color: rgb(51 51 51) !important;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 35px;
+    
+  }
+  .active {
+    color: $primary!important;
+    border-bottom: 1px solid $primary!important;
+  }
+}
+
